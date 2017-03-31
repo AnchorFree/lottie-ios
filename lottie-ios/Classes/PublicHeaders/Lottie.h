@@ -5,7 +5,8 @@
 //  Created by brandon_withrow on 1/27/17.
 //
 //
-@import Foundation;
+
+//@import Foundation;
 #ifndef Lottie_h
 #define Lottie_h
 
