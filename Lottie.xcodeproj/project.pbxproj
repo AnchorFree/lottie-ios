@@ -183,6 +183,7 @@
 		84FE13171E4C15A1009B157C /* LOTAnimationTransitionController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62CA59C41E3C179F002D7188 /* LOTAnimationTransitionController.h */; };
 		84FE13181E4C15A1009B157C /* LOTAnimationView_Compat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2DBA16351B4FA408937A16CE /* LOTAnimationView_Compat.h */; };
 		84FE13191E4C15A1009B157C /* Lottie.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 62CA59C61E3C179F002D7188 /* Lottie.h */; };
+		C69AFB901E987FEC00D807B0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C69AFB8F1E987FEC00D807B0 /* OpenGL.framework */; };
 		FA1F5AA01E42B52800FF36BF /* LOTAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1F5A9F1E42B52800FF36BF /* LOTAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA1F5AA11E42B52800FF36BF /* LOTAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1F5A9F1E42B52800FF36BF /* LOTAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAE1F7CE1E428CBE002E0974 /* LOTAnimationTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 62CA59C41E3C179F002D7188 /* LOTAnimationTransitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -287,9 +288,10 @@
 		62CA59C41E3C179F002D7188 /* LOTAnimationTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationTransitionController.h; sourceTree = "<group>"; };
 		62CA59C61E3C179F002D7188 /* Lottie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lottie.h; sourceTree = "<group>"; };
 		84FE12EF1E4C1485009B157C /* libLottie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLottie.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69AFB851E987FA700D807B0 /* libLottie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLottie.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69AFB8F1E987FEC00D807B0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		FA1F5A9F1E42B52800FF36BF /* LOTAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationView.h; sourceTree = "<group>"; };
 		FAE1F7E61E428CBE002E0974 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAE1F7E71E428CBE002E0974 /* Lottie copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Lottie copy-Info.plist"; path = "/Users/alex/Projects/lottie-ios/Lottie copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69AFB821E987FA700D807B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C69AFB901E987FEC00D807B0 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +463,7 @@
 			children = (
 				62CA59BA1E3C173B002D7188 /* Lottie */,
 				62CA59B91E3C173B002D7188 /* Products */,
-				FAE1F7E71E428CBE002E0974 /* Lottie copy-Info.plist */,
+				C69AFB8E1E987FEC00D807B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -463,6 +473,7 @@
 				62CA59B81E3C173B002D7188 /* Lottie.framework */,
 				FAE1F7E61E428CBE002E0974 /* Lottie.framework */,
 				84FE12EF1E4C1485009B157C /* libLottie.a */,
+				C69AFB851E987FA700D807B0 /* libLottie.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -494,6 +505,14 @@
 			name = PublicHeaders;
 			path = "lottie-ios/Classes/PublicHeaders";
 			sourceTree = SOURCE_ROOT;
+		};
+		C69AFB8E1E987FEC00D807B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C69AFB8F1E987FEC00D807B0 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -540,6 +559,13 @@
 				481A4A951E4A7885003CF62B /* CAAnimationGroup+LOTAnimatableGroup.h in Headers */,
 				481A4AA71E4A7885003CF62B /* LOTLayer.h in Headers */,
 				2DBA19324CDD83B5F0F115B8 /* LOTAnimationView_Compat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69AFB831E987FA700D807B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +656,23 @@
 			productReference = 84FE12EF1E4C1485009B157C /* libLottie.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C69AFB841E987FA700D807B0 /* Lottie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C69AFB8D1E987FA700D807B0 /* Build configuration list for PBXNativeTarget "Lottie" */;
+			buildPhases = (
+				C69AFB811E987FA700D807B0 /* Sources */,
+				C69AFB821E987FA700D807B0 /* Frameworks */,
+				C69AFB831E987FA700D807B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lottie;
+			productName = Lottie;
+			productReference = C69AFB851E987FA700D807B0 /* libLottie.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		FAE1F79C1E428CBE002E0974 /* Lottie_macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAE1F7E31E428CBE002E0974 /* Build configuration list for PBXNativeTarget "Lottie_macOS" */;
@@ -666,6 +709,10 @@
 						DevelopmentTeam = 5LL7P8E8RA;
 						ProvisioningStyle = Automatic;
 					};
+					C69AFB841E987FA700D807B0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 62CA59B21E3C173B002D7188 /* Build configuration list for PBXProject "Lottie" */;
@@ -683,6 +730,7 @@
 				62CA59B71E3C173B002D7188 /* Lottie_iOS */,
 				FAE1F79C1E428CBE002E0974 /* Lottie_macOS */,
 				84FE12EE1E4C1485009B157C /* LottieLibraryIOS */,
+				C69AFB841E987FA700D807B0 /* Lottie */,
 			);
 		};
 /* End PBXProject section */
@@ -776,6 +824,13 @@
 				84FE13131E4C1553009B157C /* LOTShapeTrimPath.m in Sources */,
 				84FE13141E4C1553009B157C /* LOTAnimationTransitionController.m in Sources */,
 				84FE13151E4C1553009B157C /* LOTAnimationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69AFB811E987FA700D807B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -977,6 +1032,28 @@
 			};
 			name = Release;
 		};
+		C69AFB8B1E987FA700D807B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C69AFB8C1E987FA700D807B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		FAE1F7E41E428CBE002E0974 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1044,6 +1121,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C69AFB8D1E987FA700D807B0 /* Build configuration list for PBXNativeTarget "Lottie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C69AFB8B1E987FA700D807B0 /* Debug */,
+				C69AFB8C1E987FA700D807B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		FAE1F7E31E428CBE002E0974 /* Build configuration list for PBXNativeTarget "Lottie_macOS" */ = {
 			isa = XCConfigurationList;
