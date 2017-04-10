@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C69AFB841E987FA700D807B0"
-               BuildableName = "libLottie.a"
-               BlueprintName = "Lottie"
+               BlueprintIdentifier = "62CA59B71E3C173B002D7188"
+               BuildableName = "Lottie.framework"
+               BlueprintName = "Lottie_iOS"
                ReferencedContainer = "container:Lottie.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C69AFB841E987FA700D807B0"
-            BuildableName = "libLottie.a"
-            BlueprintName = "Lottie"
+            BlueprintIdentifier = "62CA59B71E3C173B002D7188"
+            BuildableName = "Lottie.framework"
+            BlueprintName = "Lottie_iOS"
             ReferencedContainer = "container:Lottie.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C69AFB841E987FA700D807B0"
-            BuildableName = "libLottie.a"
-            BlueprintName = "Lottie"
+            BlueprintIdentifier = "62CA59B71E3C173B002D7188"
+            BuildableName = "Lottie.framework"
+            BlueprintName = "Lottie_iOS"
             ReferencedContainer = "container:Lottie.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
